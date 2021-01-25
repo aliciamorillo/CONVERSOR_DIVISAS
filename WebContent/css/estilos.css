@@ -1,0 +1,84 @@
+<!-- ESTILOS CSS -->
+
+h1 {
+	color: #0080c0;
+	font-size: 60px;
+}
+
+#foto {
+	height: 198px;
+	width: 255px;
+}
+
+body {
+	background-color: #e6faff;
+}
+
+fieldset {
+	width: 50%;
+	border-radius: 40px;
+	box-shadow:0px 0px 10px #000;
+}
+
+label {
+	font-size: 25px;
+	font-style: bold;
+}
+
+#cajaCantidad {
+	border-radius: 5px;
+	border: 1px solid #39c;
+	width: 100px;
+    padding: 5px;
+}
+
+#cajaResultado {
+	color:#0000a0;
+	font-size:40px;
+	font-family:arial;
+	width: 800px;
+	height: 150px;
+	margin-bottom: 20px;
+}
+
+.boton {
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:9px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+
+.botonBorrar {
+	box-shadow:inset 0px 1px 1px -22px #f7c5c0;
+	background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+	background-color:#fc8d83;
+	border-radius:11px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+.botonBorrar:hover {
+	background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+	background-color:#e4685d;
+}
+.botonBorrar:active {
+	position:relative;
+	top:1px;
+}
+
