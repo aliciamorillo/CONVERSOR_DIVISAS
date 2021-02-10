@@ -33,7 +33,7 @@ public class DollarEuroServlet extends HttpServlet {
 		
 		DecimalFormat formato = new DecimalFormat("#.00");
 		
-		System.out.println("SEVLET CONVERSOR DOLLAR A EURO");
+		System.out.println("SEVLET - CONVERSOR DOLLAR A EURO");
 		
 		String cantidad = request.getParameter("cajaCantidad");
 		double cantidadNumero = ConversorTextoNumero.conversorTextoNumero(cantidad);
