@@ -46,7 +46,7 @@ public class DollarEuroServlet extends HttpServlet {
 		request.setAttribute("resultado", resultadoCorto);
 		
 		response.sendRedirect("index.jsp?resultado=" + cantidad + " Dolares son: " +
-				resultadoCorto + " Euros.");				
+				resultadoCorto + " Euros.");			
 	}
 
 }
