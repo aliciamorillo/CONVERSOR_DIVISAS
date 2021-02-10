@@ -1,6 +1,7 @@
 package servlets;
 
 import java.io.IOException;
+import java.text.DecimalFormat;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -30,18 +31,23 @@ public class EuroDollarServlet extends HttpServlet {
 	protected void procesarPeticion(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
 		
+		DecimalFormat formato = new DecimalFormat("#.00");
+		
 		System.out.println("SEVLET CONVERSOR EURO A DOLAR");
 		
 		String cantidad = request.getParameter("cajaCantidad");
 		double cantidadNumero = ConversorTextoNumero.conversorTextoNumero(cantidad);
 		
 		double resultado = Factoria.obtenerCalculadoraDivisas().convertirEurosDollars(cantidadNumero);
-		System.out.println("\n- LA CANTIDAD EN EUROS -> " + resultado);
+		
+		String resultadoCorto = formato.format(resultado);
+		
+		System.out.println("\n- LA CANTIDAD EN EUROS -> " + resultadoCorto);
 
-		request.setAttribute("resultado", resultado);
+		request.setAttribute("resultado", resultadoCorto);
 		
 		response.sendRedirect("index.jsp?resultado=" + cantidad + " Euros son: " +
-				resultado + " Dolares.");
+				resultadoCorto + " Dolares.");
 
 	}
 
